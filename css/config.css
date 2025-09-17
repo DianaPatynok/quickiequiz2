@@ -1,0 +1,73 @@
+.config{
+  display: none;
+  /*display: block;*/
+  .config__container{
+    background-color: var(--color-bg-white);
+    width: 415px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.13);
+    .config__title{
+      font-size: 1.51rem;
+      font-weight: 700;
+    }
+    .config__option button{
+      font-size: 0.938rem;
+      background-color: var(--color-bg-white);
+      border: 1px solid var(--color-primary);
+      font-weight: 500;
+      padding: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      &.active{
+        color: var(--color-primary);
+        border-color: var(--color-primary);
+        background-color: var(--color-primary-hover);
+      }
+      &:hover{
+        background-color: var(--color-primary-hover);
+      }
+    }
+  }
+  .config__option{
+    margin-top: 25px;
+    .config__option-title{
+      font-size: 1.125rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: var(--color-text-darker);
+    }
+    .config__categories-options{
+      display: grid;
+      gap: 15px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .config__questions-options{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 0 30px;
+      justify-content: center;
+    }
+    .config__questions-options button{
+      flex: 1 1 10%;
+    }
+  }
+  .config__start-btn{
+    color: var(--color-bg-white);
+    background-color: var(--color-primary);
+    border: none;
+    margin-top: 30px;
+    padding: 13px 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover{
+      background-color: var(--color-primary-dark);
+    }
+  }
+}
